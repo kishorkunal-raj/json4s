@@ -5,10 +5,16 @@ scala:
   - 2.11.12
   - 2.12.12
   - 2.13.3
+arch:
+  - amd64
+  - ppc64le
 matrix:
   include:
   - scala: 2.12.12
     jdk: openjdk11
+  - scala: 2.12.12
+    jdk: openjdk1
+    arch: ppc64le
 cache:
   directories:
     - $HOME/.ivy2/cache
